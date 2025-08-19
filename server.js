@@ -7,7 +7,7 @@ const cors = require('cors');
 const next = require('next');
 const apiRouter = require('./routes/Api');
 
-const nextApp = next({ dev: process.env.NODE_ENV !== 'production' });
+const nextApp = next({ dev: false });
 const handle = nextApp.getRequestHandler();
 
 nextApp.prepare().then(() => {
