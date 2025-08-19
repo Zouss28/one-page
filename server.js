@@ -7,7 +7,7 @@ const cors = require('cors');
 const next = require('next');
 const apiRouter = require('./routes/Api');
 
-const nextApp = next({ dev: false });
+const nextApp = next({ dev: true });
 const handle = nextApp.getRequestHandler();
 
 nextApp.prepare().then(() => {
